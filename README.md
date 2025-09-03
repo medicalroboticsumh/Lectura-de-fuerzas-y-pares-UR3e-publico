@@ -22,5 +22,41 @@ El repositorio contiene el paquete de ROS **fuerzas_ur**, cuya organización es 
 
 - **CMakeLists.txt**: Archivo de configuración utilizado por catkin para la compilación e instalación del paquete.  
 
+## Requisitos Previos
+Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisitos:
+- Conectar el robot colaborativo UR3e y comprobar que está en modo 'Remote' *(ver esquina superior izquierda del Teach Pendant)*
+- Encender y configurar los siguientes equipos:
+  - Equipo 'Gauss'
+  - Equipo 'Master'
+
+## Configuración de Red
+Es necesario comprobar y establecer las siguientes direcciones IP:
+- **Robot UR3e**: `192.168.0.80`
+- **Equipo 'Gauss'**: `192.168.0.115`
+- **Equipo 'Master'**: `192.168.0.114` *(comprobar, esta IP puede variar)*
+
+## Pasos de Ejecución
+1. Iniciar `roscore` en el equipo Master:
+   ```bash
+   roscore
+   ```
+2. Lanzar el launcher del robot UR3e desde el equipo Master:
+     ```bash
+   roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.80
+   ```
+  *(donde 192.168.0.80 corresponde a la IP del UR3e)*
+  
+3. Lanzar el script 'nodo_fuerzas.py' desde el equipo 'Gauss':
+   ```bash
+   cd catkin_ws
+   source devel/setup.bash
+   rosrun fuerzas_ur nodo_fuerzas.py --host 192.168.0.80 --config src/fuerzas/ur/scripts/record_configuration.xml
+
+   *(donde 192.168.0.80 corresponde a la IP del UR3e, y `~/catkin_ws/src/fuerzas_ur/scripts/record_configuration.xml` es la ruta al archivo de configuración RTDE)*
+   ```
+4. Una vez lanzado el script, se comprueba que el tópico `rtde_data` está publicando correctamente la información sobre las fuerzas y pares del TCP del robot:
+   ```bash
+   rostopic echo /rtde_data
+   ```
 
 
