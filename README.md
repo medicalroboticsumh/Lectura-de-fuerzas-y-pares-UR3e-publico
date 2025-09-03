@@ -53,7 +53,8 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    rosrun fuerzas_ur nodo_fuerzas.py --host 192.168.0.80 --config src/fuerzas/ur/scripts/record_configuration.xml
    ```
    *(donde 192.168.0.80 corresponde a la IP del UR3e, y `~/catkin_ws/src/fuerzas_ur/scripts/record_configuration.xml` es la ruta al archivo de configuración RTDE)*
-4. Una vez lanzado el script, se comprueba que el tópico `rtde_data` está publicando correctamente la información sobre las fuerzas y pares del TCP del robot:
+   
+5. Una vez lanzado el script, se comprueba que el tópico `rtde_data` está publicando correctamente la información sobre las fuerzas y pares del TCP del robot:
    ```bash
    rostopic echo /rtde_data
    ```
