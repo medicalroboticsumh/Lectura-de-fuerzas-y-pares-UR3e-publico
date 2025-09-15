@@ -27,7 +27,9 @@ Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisito
 - Conectar el robot colaborativo UR3e y comprobar que está en modo 'Remote' *(ver esquina superior izquierda del Teach Pendant)*
 - Encender y configurar los siguientes equipos:
   - Equipo 'Gauss'
+    - Contraseña: NBIO.
   - Equipo 'Master'
+    - Contraseña: nbio.
 
 ## Configuración de Red
 Es necesario comprobar y establecer las siguientes direcciones IP:
