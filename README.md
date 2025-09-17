@@ -39,17 +39,17 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
 - **UR3e**: `192.168.0.80`
 
 ## Pasos de Ejecución
-1. Iniciar `roscore` en el equipo 'Master'.
+1. Iniciar `roscore` en el equipo **'Master'**.
    ```bash
    roscore
    ```
-2. Abrir un nuevo terminal en el equipo 'Master'. En él, lanzar el launcher del robot UR3e.
+2. Abrir un nuevo terminal en el equipo **'Master'**. En él, lanzar el launcher del robot UR3e.
      ```bash
    roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.80
    ```
   *(donde 192.168.0.80 corresponde a la IP del UR3e)*
   
-3. Lanzar el script 'nodo_fuerzas.py' desde el equipo 'Gauss'.
+3. Lanzar el script `nodo_fuerzas.py` desde el equipo **'Gauss'**.
    ```bash
    cd catkin_ws
    source devel/setup.bash
