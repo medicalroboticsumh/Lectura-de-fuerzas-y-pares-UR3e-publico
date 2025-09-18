@@ -25,15 +25,14 @@ El repositorio contiene el paquete de ROS **fuerzas_ur**, cuya organización es 
 ## Requisitos Previos
 Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisitos:
 - Encender y configurar los siguientes equipos:
-  - Equipo 'Gauss'
+  - Equipo **'Gauss'**
     - Contraseña: NBIO.
-  - Equipo 'Master'
+  - Equipo **'Master'**
     - Contraseña: nbio.
 - Conectar el robot colaborativo UR3e y comprobar que está en modo 'Remote' *(ver esquina superior izquierda del Teach Pendant)*
 
 ## Configuración de Red
 Es necesario comprobar y establecer las siguientes direcciones IP:
-- **Robot UR3e**: `192.168.0.80`
 - **Equipo 'Gauss'**: `192.168.0.115`
 - **Equipo 'Master'**: `192.168.0.114` *(comprobar, esta IP puede variar)*
 - **UR3e**: `192.168.0.80`
@@ -43,7 +42,7 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    ```bash
    roscore
    ```
-2. Abrir un nuevo terminal en el equipo **'Master'**. En él, lanzar el launcher del robot UR3e.
+2. Abrir un nuevo terminal en el equipo **'Master'**. En él, lanzar el launcher del robot **UR3e**.
      ```bash
    roslaunch ur_robot_driver ur3e_bringup.launch robot_ip:=192.168.0.80
    ```
