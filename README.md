@@ -29,7 +29,7 @@ Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisito
     - Contraseña: NBIO.
   - Equipo **'Master'**
     - Contraseña: nbio.
-- Conectar el robot colaborativo UR3e:
+- Conectar el robot colaborativo **UR3e**:
   - Pulsar el botón de encendido situado en el Teach Pendant.
   - En el Teach Pendant, pulsar el boton rojo en la esquina inferior izquierda para encender el robot.
   - Comprobar que está en modo 'Remote' *(ver esquina superior izquierda del Teach Pendant)*
