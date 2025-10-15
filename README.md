@@ -56,7 +56,7 @@ Es necesario comprobar y establecer las siguientes direcciones IP:
    cd
    cd catkin_ws
    source devel/setup.bash
-   rosrun fuerzas_ur nodo_fuerzas.py --host 192.168.0.80 --config src/fuerzas/ur/scripts/record_configuration.xml
+   rosrun fuerzas_ur nodo_fuerzas.py --host 192.168.0.80 --config ~/catkin_ws/src/fuerzas_ur/scripts/record_configuration.xml
    ```
    *(donde 192.168.0.80 corresponde a la IP del UR3e, y `~/catkin_ws/src/fuerzas_ur/scripts/record_configuration.xml` es la ruta al archivo de configuración RTDE)*
    
