@@ -1,1 +1,0 @@
-# Lectura-de-fuerzas-y-pares-UR3e-publico
