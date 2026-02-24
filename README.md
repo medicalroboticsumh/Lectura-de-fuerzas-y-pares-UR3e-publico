@@ -27,21 +27,11 @@ El repositorio contiene el paquete de ROS **`fuerzas_ur`**, cuya organización e
 
 ## Requisitos Previos
 Antes de ejecutar el sistema, asegúrese de cumplir con los siguientes requisitos:
-- Encender y configurar los siguientes equipos:
-  - Equipo **'Gauss'**
-    - Contraseña: NBIO.
-  - Equipo **'Master'**
-    - Contraseña: nbio.
+- Encender y configurar los siguientes equipos: **'Gauss'** y **'Master'**
 - Conectar el robot colaborativo **UR3e**:
   - Pulsar el botón de encendido situado en el Teach Pendant.
   - En el Teach Pendant, pulsar el boton rojo en la esquina inferior izquierda para encender el robot.
   - Comprobar que está en modo 'Remote' *(ver esquina superior izquierda del Teach Pendant)*
-
-## Configuración de Red
-Es necesario comprobar y establecer las siguientes direcciones IP:
-- **Equipo 'Gauss'**: `192.168.0.115`
-- **Equipo 'Master'**: `192.168.0.114` *(comprobar, esta IP puede variar)*
-- **UR3e**: `192.168.0.80`
 
 ## Pasos de Ejecución
 1. Iniciar `roscore` en el equipo **'Master'**.
