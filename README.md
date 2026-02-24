@@ -1,4 +1,7 @@
 # Lectura-de-fuerzas-y-pares-UR3e
+
+Las fuerzas recogidas del UR se encuentran en el sistema de referencia de la base, por lo que en el propio código se ha aplicado la conversión al sistema de referencia del efector final. De este modo, de igual manera que se calculaba la media de las fuerzas y torques en al base, se aplica también a las recogidas en el efector final.
+
 ## Descripción 
 Este paquete de ROS permite acceder en tiempo real a la estimación de fuerzas y torques en el efector final del robot colaborativo UR3e a través de su interfaz RTDE (Real-Time Data Exchange).
 
